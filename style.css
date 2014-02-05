@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'ArcadeClassic';
+    src:url('ArcadeClassic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font:normal 24px 'ArcadeClassic', 'Courier', sans-serif;
+	background:#000;
+	padding:20px;
+	text-transform: uppercase;
+	overflow:hidden;
+}
+
+body > div {
+	outline:0 !important;
+}
+
+#wrap {
+	margin:auto;
+	width:800px;
+	position:relative;
+	padding:5px;
+}
+
+canvas {
+	background:#fff;
+}
+
+#message {
+	color:#000;
+	width:760px;
+	position:absolute;
+	top:150px;
+	left:26px;
+	text-align:center;
+	background:rgba(255,255,255,.9);
+	padding:50px 0;
+	border:3px solid #000;	
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+	height:562px;
+}
+
+#message strong {
+	display:block;
+	font-size:30px;
+	color:#7dcc00;
+	padding-bottom:15px;
+}
+
+.enter_name {
+	font-size:24px;
+	color:#7dcc00;
+}
+
+#message strong.gameover,
+#message .paused {
+	color:#000;
+	font-size:55px;
+	padding-bottom:40px;
+}
+
+#message p {
+	font-size:22px;
+}
+
+#message strong.title {font-size:64px;}
+
+.highscore {
+	background:rgba(0,0,0,.05);
+	border:0;
+	border-bottom:3px solid #000;
+	padding:10px;
+	width:95px;
+	text-align:center;
+	letter-spacing:2px;
+	font-size:24px;
+	line-height:24px;
+	text-transform: uppercase;
+	outline:0;
+	font-family:'ArcadeClassic';
+	margin:0 15px;
+}
+
+#message .finalscore,
+#message .pausescore {
+	font-size:24px;
+	color:#000;
+}
+#message .finalscore span,
+#message .pausescore span {
+	margin-left:20px;
+	font-size:30px;
+	color:#7dcc00;
+}
+
+.highscore_save {
+	cursor:pointer;
+	position:relative;
+	top:11px;
+}
+
+h3.scores {
+	margin-top:60px;
+	margin-bottom:15px;
+}
+
+.scoreboard {
+	padding-bottom:30px;
+}
+
+.scoreboard ol {
+	list-style-type:none;
+	list-style-position:inside;
+	margin:0 auto;
+	padding:0;
+	text-align:center;
+}
+.scoreboard li {line-height:30px;}
+.scoreboard .name {width:100px;display:inline-block;text-align:left;}
+.scoreboard .score {
+	display:inline-block;
+	font-weight:bold;font-size:30px;color:#7dcc00;
+	width:100px;
+	text-align:right;
+}
+
+/* SCOREBOARD NAV LINKS */
+.score-page,.score-pagenum {
+	padding:10px;
+	position:absolute;
+	top:516px;
+	right:30%;
+	margin-left:-18px;
+}
+.score-page.score-prev {
+	right:38%;
+}
+
+.score-pagenum {
+	right:36.25%;
+	padding:7px 0 0;
+}
+
+.score-page span {
+	width: 18px; 
+	height: 17px; 
+	display:block;
+	background:url('img/down.png') 0 0 no-repeat;
+	text-indent:-999em;
+	font-size:0;
+	overflow:hidden;
+}
+
+.score-page.score-prev span {
+	background-image:url('img/up.png');
+}
+
+/* LEADER BADGE */
+.scoreboard li.leader .name {position:relative;}
+.scoreboard li.leader .name:before {
+	content:"";
+	display:block;
+	position:absolute;
+	top:5px;left:-30px;
+	background:url('food/pack/3.png') no-repeat;
+	width:16px;
+	height:16px;
+}
+
+.arrow.key {
+	position:relative;
+	top:3px;
+}
+.key {margin:0 15px;}
+
+.controls {
+	margin-bottom:30px;
+}
+
+.hidden {
+	display:none;
+}
